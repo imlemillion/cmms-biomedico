@@ -1,6 +1,6 @@
 #Interfaz
 import streamlit as st
-from registro_equipos import cargar_datos, guardar_datos
+from equipos import cargar_datos, guardar_datos
 
 st.title("Registro de Equipos Biomédicos")
 st.write("Bienvenido al sistema de registro - CMQ MORENO")

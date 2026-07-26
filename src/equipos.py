@@ -9,7 +9,7 @@ def saludar(nombre_hospital):
     print(f"=== BIENVENIDO - {nombre_hospital} ====\n")
     print(f"==== PROGRAMA DE REGISTRO DE EQUIPOS BIOMÉDICOS ===\n")
 
-def cargar_datos(nombre_archivo="equipos.json"):
+def cargar_datos(nombre_archivo="../data/equipos.json"):
     try:
         with open (nombre_archivo, "r") as archivo:
             equipos = json.load(archivo)                                #conversion de json a python
@@ -54,7 +54,7 @@ def mostrar_resumen(equipos):
         print(f"      - {e['nombre']} - S/N: {e['serie']}")
 
 import os
-def guardar_datos(equipos, nombre_archivo="equipos.json"):
+def guardar_datos(equipos, nombre_archivo="../data/equipos.json"):
     print(f"Guardando en: {os.getcwd()}")
     with open(nombre_archivo, "w") as archivo:
         json.dump(equipos, archivo, indent=8)                 #conversión de python a json
