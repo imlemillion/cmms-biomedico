@@ -1,0 +1,32 @@
+[
+        {
+                "nombre": "MB1",
+                "serie": "0000",
+                "estado": "no"
+        },
+        {
+                "nombre": "MB2",
+                "serie": "0001",
+                "estado": "No"
+        },
+        {
+                "nombre": "MB3",
+                "serie": "0002",
+                "estado": "S\u00ed"
+        },
+        {
+                "nombre": "ecg",
+                "serie": "1234",
+                "estado": "si"
+        },
+        {
+                "nombre": "desfibrilador",
+                "serie": "4040",
+                "estado": "S\u00ed"
+        },
+        {
+                "nombre": "O500RS",
+                "serie": "OM457",
+                "estado": "S\u00ed"
+        }
+]
