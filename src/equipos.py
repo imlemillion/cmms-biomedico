@@ -2,7 +2,7 @@
 # Autor: Lemillion
 # Descripción: Programa que registra el estado operativode equipos médicos y genera un resumen porcentual.
 
-
+import os
 import json
 from dataclasses import dataclass
 from enum import Enum
@@ -22,7 +22,7 @@ class Equipo:
     criticidad_justificacion: str = ""
     proximo_mantenimiento: Optional[str] = None
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict: #convertir objeto a texto plano para JSON
         return {
             "nombre": self.nombre,
             "serie": self.serie,
@@ -91,7 +91,6 @@ def mostrar_resumen(equipos):
     for e in mantenimiento:
         print(f"      - {e.nombre} - S/N: {e.serie}")
 
-import os
 def guardar_datos(equipos, nombre_archivo="../data/equipos.json"):
     print(f"Guardando en: {os.getcwd()}")
     equipos_dict = [e.to_dict() for e in equipos] #list comprehension para converir a diccionario
