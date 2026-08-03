@@ -2,31 +2,65 @@
         {
                 "nombre": "MB1",
                 "serie": "0000",
-                "estado": "no"
+                "estado": "no",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
         },
         {
                 "nombre": "MB2",
                 "serie": "0001",
-                "estado": "No"
+                "estado": "No",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
         },
         {
                 "nombre": "MB3",
                 "serie": "0002",
-                "estado": "S\u00ed"
+                "estado": "S\u00ed",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
         },
         {
                 "nombre": "ecg",
                 "serie": "1234",
-                "estado": "si"
+                "estado": "si",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
         },
         {
                 "nombre": "desfibrilador",
                 "serie": "4040",
-                "estado": "S\u00ed"
+                "estado": "S\u00ed",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
         },
         {
                 "nombre": "O500RS",
                 "serie": "OM457",
-                "estado": "S\u00ed"
+                "estado": "S\u00ed",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
+        },
+        {
+                "nombre": "x ray",
+                "serie": "MB0005",
+                "estado": "S\u00ed",
+                "criticidad": null,
+                "criticidad_justificacion": "",
+                "proximo_mantenimiento": null
+        },
+        {
+                "nombre": "CELL DYN RUBY",
+                "serie": "CDRAB001",
+                "estado": "S\u00ed",
+                "criticidad": "Alta",
+                "criticidad_justificacion": "Equipo uso diario",
+                "proximo_mantenimiento": "2026-08-21"
         }
 ]
