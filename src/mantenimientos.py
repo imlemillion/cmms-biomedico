@@ -85,3 +85,14 @@ def guardar_mantenimientos(mantenimientos, nombre_archivo="../data/mantenimiento
     with open(nombre_archivo, "w") as archivo:
         json.dump(mantenimientos_dict, archivo, indent=8)
     print(f"\n Datos guardados en {nombre_archivo}")
+
+
+def cargar_mantenimientos(nombre_archivo="../data/mantenimientos.json"):
+    try:
+        with open(nombre_archivo, "r") as archivo:
+            mantenimientos_dict = json.load(archivo)
+            mantenimientos = [Mantenimiento.from_dict(m) for m in mantenimientos_dict]
+            print(f"Se cargaron {len(mantenimientos)} mantenimientos registrados. \n")
+            return mantenimientos
+    except FileNotFoundError:
+        return []
